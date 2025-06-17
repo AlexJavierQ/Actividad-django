@@ -117,6 +117,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -124,6 +126,18 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
+    "site_title": "MangoDev Admin",
+    "site_header": "Administración MangoDev",
     "site_brand": "MangoDev",
-    "site_logo": "/home/alex/Escritorio/plataformas_web/proyecto_django/proyecto_django/img",
+    "site_logo": "app/img/mango.png",
+    "site_icon": "app/img/mango.png",  
+        # Temas visuales disponibles: flatly, darkly, minty, etc.
+    "theme": "darkly",
+
+    #  footer personalizado
+    "site_footer": "MangoDev © 2025",
+    "copyright": "Desarrollado por MangoDev",
+
 }
+
+
